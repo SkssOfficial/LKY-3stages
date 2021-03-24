@@ -216,28 +216,8 @@ function countMovement() {
                 }
                                 
                 break;
-            case '2':
-                if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
-                    break;
-                }
-                
-                /*test1 = leftKnee.confidence; // test
-                test2 = rightKnee.confidence;*/ // test
-                
-                if (rightKnee.y > rightWrist.y ) {
-                    stageResult[0] += 1
-                } else if (leftKnee.y > leftWrist.y ) {
-                    stageResult[1] += 1
-                }
-                                
-                break;
-            case '4':
-                if (leftWrist.y > leftElbow.y + poseOffset && leftWrist.confidence > confidenceOffset && leftElbow.confidence > confidenceOffset) {
-                    stageResult[0] += 1
-                } else if (rightWrist.y > rightElbow.y + poseOffset && rightWrist.confidence > confidenceOffset && rightElbow.confidence > confidenceOffset) {
-                    stageResult[1] += 1
-                }
-                break;
+           
+           
             case '3':
                 if (leftKnee.y > leftElbow.y + poseOffset && leftKnee.confidence > confidenceOffset && leftElbow.confidence > confidenceOffset) {
                     stageResult[0] += 1
