@@ -55,13 +55,7 @@ function setUpStepDetail() {
         case '2':
             stepDetail.innerHTML = "先提右腿，再提左腿，雙手同時輪流在左方和右方拍掌，共8次。"
             break;
-        case '3':
-            stepDetail.innerHTML = "重複第1組動作，先提起右腿，然後放下；再提起左腿，然後放下；每次提腿時，提腿稍高，雙手同時在腿下拍掌，共8次。"
-            break;
-        case '4':
-            stepDetail.innerHTML = "腰背略為離開椅背，兩臂屈曲，指尖向上，手肘提高至胸前，然後手肘向兩側張開再收回，共8次。"
-            break;
-        default:
+          default:
             break;
     }
 }
